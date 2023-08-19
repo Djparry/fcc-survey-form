@@ -3,10 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="index.css" rel="stylesheet" />
+    <title>survey form</title>
+    <link href="/CSS/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello!</h1>
+    <header class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    </header>
+    <form id="survey-form">
+      <label for="name" id="name-label">name:</label
+      ><input required id="name" type="text" placeholder="enter your name" />
+
+      <label for="email" id="email-label">email:</label
+      ><input required id="email" type="email" placeholder="enter your email" />
+
+      <label for="age" id="number-label">age:</label
+      ><input required id="number" type="number" min="13" max="120" placeholder="age" />
+
+      <label for="role">Which option best describes your current role?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="">select current role</option>
+        <option value="1">student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Full time learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+
+      <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+      <label>
+        <input type="radio" value="definetly" name="recommendation" class="inline" />definetly
+      </label>
+      <label>
+        <input type="radio" value="maybe" name="recommendation" class="inline" />maybe
+      </label>
+      <label>
+        <input type="radio" value="not sure" name="recommendation" class="inline" />not sure
+      </label>
+
+      <label for="feature">What is your favorite feature of freeCodeCamp? </label>
+      <select name="feature" id="feature">
+        <option value="">select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Projects</option>
+        <option value="3">Communities</option>
+        <option value="4">Open source</option>
+      </select>
+
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <label>
+        <input type="checkbox" name="improve" value="front-end" class="inline" required />Front-end
+        Projects
+      </label>
+      <label>
+        <input type="checkbox" value="back-end" name="improve" class="inline" required />back-end
+        projects
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="data visualization"
+          name="improve"
+          class="inline"
+          required
+        />data visualization
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="challenges"
+          name="improve"
+          class="inline"
+          required
+        />challenges
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="open source community"
+          name="improve"
+          class="inline"
+          required
+        />open source community
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="gitter help room"
+          name="improve"
+          class="inline"
+          required
+        />gitter help room
+      </label>
+      <label>
+        <input type="checkbox" value="videos" name="improve" class="inline" required />videos
+      </label>
+      <label>
+        <input type="checkbox" value="city meetups" name="improve" class="inline" required />city
+        meetups
+      </label>
+      <label>
+        <input type="checkbox" value="wiki" name="improve" class="inline" required />wiki
+      </label>
+      <label>
+        <input type="checkbox" value="forum" name="improve" class="inline" required />forum
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="additional course"
+          name="improve"
+          class="inline"
+          required
+        />additional courses
+      </label>
+      <label> Any comments or suggestions? </label>
+      <textarea
+        name="suggestion"
+        rows="8"
+        cols="30"
+        placeholder="enter your comment here..."
+      ></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
   </body>
 </html>
